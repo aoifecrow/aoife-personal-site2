@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aoife Crow</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Icons-->
+    <script src="https://kit.fontawesome.com/59aa450468.js" crossorigin="anonymous"></script>
+    <!-- Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <ul class="sidebar">
+      <li onclick = hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a href="">About Me</a></li>
+      <li><a href="connect.html">Connect</a></li>
+    </ul>
+    <ul>
+      <li ><a href="index.html">aoife crow</a></li>
+      <li class="hideOnMobile"><a href="connect.html">Connect</a></li>
+      <li class = "menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+    <!-- Connect with me content-->
+    <main>
+        <div class="content-box" >
+         <h1> Connect With Me</h1>
+         <div class="social-links">
+
+            <!-- LinkedIn-->
+            <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> aoifecrow </a>
+ 
+            <!-- GitHub -->
+            <a href="https://github.com/YOUR-GITHUB" target="_blank" rel="noopener noreferrer"> <i class="fab fa-github"></i><strong>GitHub:</strong> @aoifecrow </a>
+</div>
+
+        </div>
+    </main> 
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display ='flex';
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display ='none';
+      }
+    </script>
+  </body>
+  </html>
